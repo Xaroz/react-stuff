@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { UserContext } from "./UserContext";
 import { login } from "./login";
 
@@ -6,6 +6,10 @@ export default function Home() {
   // const {value, setValue} = useContext(UserContext);
   const { user, setUser } = useContext(UserContext);
 
+  useEffect(() => {
+    document.title = "HomePage"
+  });
+  
   return (
     <div className="page">
       <h1>Hello!</h1>

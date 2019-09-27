@@ -20,8 +20,10 @@ function App() {
       <UserContext.Provider value={value}>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/page1" render={() => <Page1 />} />
-          <Route exact path="/page2" render={() => <Page2 />} />
+          {/* <Route exact path="/page1" render={() => <Page1 />} />
+          <Route exact path="/page2" render={() => <Page2 />} /> */}
+          <Route exact path = "/page1" component = {Page1} />
+          <Route exact path = "/page2" component = {Page2} />
           <Route component={PageError} />
         </Switch>
       </UserContext.Provider>
