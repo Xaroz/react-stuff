@@ -5,6 +5,7 @@ import Home from "./Home";
 import Page1 from "./Page1";
 import Page2 from "./Page2";
 import PageError from "./PageError";
+import Reducer from "./Reducer";
 import "./App.css";
 import { UserContext } from "./UserContext";
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/page2" render={() => <Page2 />} /> */}
           <Route exact path = "/page1" component = {Page1} />
           <Route exact path = "/page2" component = {Page2} />
+          <Route exact path = "/reducer" component = {Reducer} />
           <Route component={PageError} />
         </Switch>
       </UserContext.Provider>

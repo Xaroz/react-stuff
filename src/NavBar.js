@@ -59,6 +59,11 @@ export default function NavBar(){
           Page 2
         </Link>
       </div>
+      <div className="link-container">
+        <Link to="/reducer" className="link">
+          useReducer Test
+        </Link>
+      </div>
     </div>
   )
 }
